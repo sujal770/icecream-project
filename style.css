@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+/* for the hero image text */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+/* about heading */
+@import url('https://fonts.googleapis.com/css2?family=Zain:wght@200;300;400;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Zain:wght@200;300;400;700;800;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background: linear-gradient(90deg, rgba(68,58,15,1) 1%, rgba(163,105,30,1) 38%);
+
+}
+
+
+header{
+    background-image: url("hero-4.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100vh;
+    margin-bottom: 7%;
+}
+
+
+ul {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+ul img {
+    width: 13%; /* Adjust the size as needed */
+    height: auto;
+}
+
+ul li {
+    margin: 0 2%;
+}
+
+ul li a {
+    font-family: "PT Serif", serif;
+     font-weight: 400;
+     font-style: normal;
+     color: rgb(79, 79, 122);
+     text-decoration: none;
+     font-size: 105%;
+     font-weight: bold;
+     padding: 11% 15%;
+}
+
+ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 9%;
+}
+.hero-text{
+    position: absolute;
+    display: flex;
+    right: 3%;
+    top:40%;
+    align-items: flex-start;
+    flex-direction: column;
+    animation: slide-in 2s ease-out;
+
+}
+.hero-text h1,.hero-text h2{
+    white-space: nowrap;
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 405%;
+    letter-spacing: 2%;
+    color: rgb(20, 26, 81);
+    line-height: 98%;
+}
+.hero-text h1 strong{
+    white-space: nowrap;  
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 80%;
+    letter-spacing: 2%;
+    color: rgb(139, 52, 52);
+    text-decoration: 4px solid rgb(20, 26, 81) underline;
+
+}
+.hero-text h2 strong{
+    white-space: nowrap;  
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 80%;
+    color: rgb(104, 48, 48);
+
+
+}
+@keyframes slide-in {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.content-picture img{
+    width: 90%;
+}
+
+.content-picture img:hover{
+    opacity: 0.8;
+    cursor: pointer;
+
+}
+.content-icecream{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    align-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+.content-picture{
+    width: 40%;
+}
+.icecream-text{
+    width: 90%;
+    border-bottom: 4px solid white;
+    
+    
+}
+.icecream-text h1{
+  font-family: "Zain", sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  color: rgb(69, 24, 24);
+}
+.icecream-text p{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 32px;
+    text-wrap: wrap;
+}
+.icecream-text ul li img{
+    margin-top: 10%;
+    width: 30%;
+    height: 40%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+}
+.icecream-text ul li img:hover{
+    background-color: white;
+    opacity: 0.8;
+    border-radius: 15%;
+    padding: 2%;
+    transform: scale(1.01);
+
+
+}
+.infoo{
+    margin-bottom: 15%;
+    background: linear-gradient(90deg, rgba(68,58,15,1) 1%, rgba(163,105,30,1) 38%);
+
+}
+.user-rv{
+    margin: 0 auto 0 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+.testimonials{
+    display: flex;
+    margin: 0 3% 03% 3%;
+    flex-direction: row;
+    padding: 5%;
+    background-color: #bdad51;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+.testimonials:hover{
+    opacity: 0.9;
+    transform: scale(1.01);
+    border-radius: 15px;
+}
+.user-review-image{
+    width: 40%;
+}
+.user-info{
+    width: 50%;
+}
+.user-review-image img{
+    width: 60%;
+}
+.user-info h2{
+    color: white;
+    font-family: "Zain", sans-serif;
+    font-size: 410%;
+}
+.user-info p{
+    font-family: "Nunito", sans-serif;
+    font-size: 120%;
+    text-wrap: wrap;
+    color: black;
+    line-height: 30px;
+}
+
+
+/* contact form  */
+.contact-form {
+    background: linear-gradient(90deg, rgba(68, 58, 15, 1) 1%, rgba(163, 105, 30, 1) 38%);
+    padding: 50px 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #bdad51;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.form-section {
+    padding: 20px;
+}
+
+.form-section h2 {
+    margin-bottom: 20px;
+    font-family: "Zain", sans-serif;
+    font-size: 32px;
+    color: rgb(69, 24, 24);
+}
+
+.form-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-section label {
+    margin: 10px 0 5px;
+    font-family: "Nunito", sans-serif;
+    font-size: 18px;
+    color: rgb(69, 24, 24);
+}
+
+.form-section input,
+.form-section textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.form-section button {
+    padding: 10px;
+    background-color: rgb(69, 24, 24);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Nunito", sans-serif;
+    font-size: 18px;
+}
+
+.form-section button:hover {
+    opacity: 0.7;
+}
+
+.image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+/* footer */
+/* Footer Styles */
+footer {
+    background-color: #bdad51; /* Match the background color */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-logo img {
+    width: 100px; 
+    height: auto;
+}
+
+.footer-info h3 {
+    font-family: "Zain", sans-serif;
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.footer-info p {
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+
+.footer-bottom {
+    padding: 10px 0;
+    font-family: "Nunito", sans-serif;
+    font-size: 14px;
+}

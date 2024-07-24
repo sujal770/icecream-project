@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IceCream-Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <!--nav bar-->
+    <header>
+        <nav>
+            <ul>
+                <li><img src="logo.png" alt="Logo"></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#user-rating">Rating</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero-text">
+            <h1>" Life is <strong>Short,</strong></h1>
+            <h2> Eat the <strong>Ice Cream</strong> First."</h2>
+        </div>
+    </header>
+<!--about section-->
+    <section class="infoo" id="about">
+        <div class="content-icecream">
+            <div class="content-picture">
+                <img src="icecream-1.png" alt="ice-cream Picture" id="mainImage">
+            </div>
+            <div class="icecream-text">
+                <h1>Chocolate Peanut Butter Cup</h1>
+                <p>
+                    Chocolate peanut butter cup ice cream is a popular flavor that combines the rich taste of chocolate
+                    ice cream with the salty, creamy goodness of peanut butter cups.</p>
+                <ul>
+                    <li><img src="imm-1.png"></li>
+                    <li><img src="imm-2.png"></li>
+                    <li><img src="imm-3.png"></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- for the customer rating-->
+    <section class="user-rv" id="user-rating">
+        <div class="testimonials"> <!-- use this for the flex box properties-->
+            <div class="user-review-image">
+                <img src="user-profile.png" alt="user-1 ">
+            </div>
+            <div class="user-info">
+                <h2>Alex Decarpio </h2>
+                <p>"I am absolutely in love with the Chocolate Peanut Butter Cup ice cream! The rich chocolate flavor
+                    perfectly complements the creamy peanut butter swirls, creating a delightful and indulgent treat.
+                    Each bite is filled with chunks of real peanut butter cups, adding a satisfying crunch. This ice
+                    cream has become my go-to dessert, and I can't get enough of it!"
+
+                </p>
+            </div>
+
+           
+             
+        </div>
+        <!--second-->
+        <div class="testimonials"> <!-- use this for the flex box properties-->
+            <div class="user-review-image">
+                <img src="user-2.png" alt="user-2 ">
+            </div>
+            <div class="user-info">
+                <h2>Jurgen Kloop </h2>
+                <p>"This ice cream is a dream come true for chocolate and peanut butter lovers. The balance between the two flavors is spot on, and the texture is smooth and creamy. I particularly enjoy the generous amount of peanut butter cups mixed in. My only complaint is that it's so delicious, I finish the pint way too quickly!"
+                </p>
+                <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+
+            
+             
+        </div>
+
+    </section>
+
+    <!-- Contact form-->
+    <section class="contact-form" id="contact">
+        <div class="container">
+            <div class="form-section">
+                <h2>Contact Us</h2>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="image-section">
+                <img src="contact.png" alt="Ice Cream Image">
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+    <!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <div class="footer-info">
+            <h3>Ice Cream Delight</h3>
+            <p>120 Bloor Young<br>
+               Toronto,Ontario<br>
+               Phone: (123) 456-7890<br>
+               Email: info@icecreamdelight.com</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Ice Cream Delight. All rights reserved.</p>
+    </div>
+</footer>
+
+   
+    <script>
+        document.querySelectorAll('.icecream-text ul li img').forEach(img => {
+            img.addEventListener('click', function () {
+                document.getElementById('mainImage').src = this.src;
+            });
+        });
+    </script>
+</body>
+
+</html>
